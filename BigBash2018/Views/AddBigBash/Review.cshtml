@@ -1,0 +1,121 @@
+﻿@model IEnumerable<BusinessLayer.GetBigBashTable>
+
+
+
+@{
+    ViewBag.Title = "Review";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Review</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddBigBash", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Ahmer Total Amount", "AhmerSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Altaf Total Amount", "AltafSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Anil  Total Amount", "AnilSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Deepu  Total Amount", "DeepuSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Kalpesh  Total Amount", "KalpeshSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Khursheed  Total Amount", "KhursheedSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Paresh  Total Amount", "PareshSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Suroor  Total Amount", "SuroorSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Vikas  Total Amount", "VikasSubtotal", "AddBigBash")
+</p>
+
+<table border="1">
+    <tr>
+        <th>
+            Match Name
+        </th>
+        <th>
+            Match Date
+        </th>
+        <th>
+            6 Number
+        </th>
+        <th>
+            6 Number Amount
+        </th>
+        <th>
+            7 Number
+        </th>
+        <th>
+            7 Number Amount
+        </th>
+
+        <th>
+            8 Number
+        </th>
+        <th>
+            8 Number Amount
+        </th>
+        <th>
+            9 Number
+        </th>
+        <th>
+            9 Number Amount
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Match_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Match_Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Six_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Six_Number_amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seven_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Seven_Number_amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eight_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eight_Number_amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nine_Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nine_Number_amount)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Create New Topper", "AddBigBashNew")
+    @Html.ActionLink("vIEW Topper", "ReviewNew")
+</p>
+
+

@@ -1,0 +1,10 @@
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\BusinessLayer.dll
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\BusinessLayer.pdb
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\EntityFramework.dll
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\EntityFramework.xml
+D:\R&D\BigBash2018\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\R&D\BigBash2018\BusinessLayer\obj\Debug\BusinessLayer.dll
+D:\R&D\BigBash2018\BusinessLayer\obj\Debug\BusinessLayer.pdb
+D:\R&D\BigBash2018\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache

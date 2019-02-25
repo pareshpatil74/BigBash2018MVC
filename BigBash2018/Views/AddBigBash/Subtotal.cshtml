@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Subtotal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+
+}
+
+<p>
+    @Html.ActionLink("Back To Review", "Review")
+</p>
+<h2>Subtotal</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sub Details</title>
+</head>
+<body>
+    <div>
+        <p> @ViewBag.Name sub total </p>
+        @ViewBag.iSubtotal
+    </div>
+</body>
+</html>

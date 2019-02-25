@@ -1,0 +1,89 @@
+﻿@model IEnumerable<BusinessLayer.GetBigBashTableNew>
+
+
+
+@{
+    ViewBag.Title = "Review";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Review</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AddBigBash", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Ahmer Total Amount", "AhmerSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Altaf Total Amount", "AltafSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Anil  Total Amount", "AnilSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Deepu  Total Amount", "DeepuSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Kalpesh  Total Amount", "KalpeshSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Khursheed  Total Amount", "KhursheedSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Paresh  Total Amount", "PareshSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Suroor  Total Amount", "SuroorSubtotal", "AddBigBash")
+</p>
+<p>
+    @Html.ActionLink("Vikas  Total Amount", "VikasSubtotal", "AddBigBash")
+</p>
+
+<table border="1">
+    <tr>
+        <th>
+            Match Name
+        </th>
+        <th>
+            Match Date
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Rank
+        </th>
+        <th>
+            Amount
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Match_Name_New)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Match_Date_New)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount_new)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<p>
+    @Html.ActionLink("Create New Topper", "AddBigBashNew")
+</p>
+
+

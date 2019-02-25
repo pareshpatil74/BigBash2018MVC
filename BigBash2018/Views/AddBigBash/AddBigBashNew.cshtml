@@ -1,0 +1,96 @@
+﻿@model BusinessLayer.AddBigBashNew
+
+@{
+    ViewBag.Title = "AddBigBash";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    $(function () {
+        $("#Match_Date_New").datepicker({
+            //showOn: 'button',
+            //buttonImageOnly: true,
+            //buttonImage: '/Content/images/calendar.jpg'
+        });
+    });
+</script>
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+<body>
+    @using (Html.BeginForm("AddBigBashNew", "AddBigBash", FormMethod.Post))
+    {
+        @Html.ValidationSummary(true)
+        @Html.AntiForgeryToken()
+        <table width="100%">
+            <tr>
+                <td width="30%">
+                    @Html.LabelFor(a => a.Match_Name_New)
+                </td>
+                <td width="70%" align="left">
+                    @Html.TextBoxFor(a => a.Match_Name_New, new Dictionary<string, object>() { { "style", "width:150px;" } })
+                    <br />
+                    @Html.ValidationMessageFor(a => a.Match_Name_New)
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">
+                    @Html.LabelFor(a => a.Match_Date_New)
+                </td>
+                <td width="70%" align="left">
+                    @Html.TextBoxFor(a => a.Match_Date_New, new Dictionary<string, object>() { { "style", "width:150px;" } })
+                    <br />
+                    @Html.ValidationMessageFor(a => a.Match_Date_New)
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">
+                    @Html.LabelFor(a => a.Name)
+                </td>
+                <td width="70%" align="left">
+                    @Html.TextBoxFor(a => a.Name, new Dictionary<string, object>() { { "style", "width:150px;" } })
+                    <br />
+                    @Html.ValidationMessageFor(a => a.Name)
+                </td>
+            </tr>
+            <tr>
+                <td width="30%">
+                    @Html.LabelFor(a => a.Rank)
+                </td>
+                <td width="70%" align="left">
+                    @Html.TextBoxFor(a => a.Rank, new Dictionary<string, object>() { { "style", "width:150px;" } })
+                    <br />
+                    @Html.ValidationMessageFor(a => a.Rank)
+                </td>
+            </tr>
+
+            <tr>
+                <td width="30%">
+                    @Html.LabelFor(a => a.Amount_new)
+                </td>
+                <td width="70%" align="left">
+                    @Html.TextBoxFor(a => a.Amount_new, new Dictionary<string, object>() { { "style", "width:150px;" } })
+                    <br />
+                    @Html.ValidationMessageFor(a => a.Amount_new)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Add Records" />
+
+                </td>
+
+            </tr>
+        </table>
+    }
+</body>
+</html>
