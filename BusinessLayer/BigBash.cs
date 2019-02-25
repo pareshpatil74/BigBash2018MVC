@@ -128,7 +128,7 @@ namespace BusinessLayer
         [Display(Name = "Rank")]
         public int Rank { get; set; }
 
-        [Required(ErrorMessage = "Amount can't be empty")]
+        [Required(ErrorMessage = "Amount can't be empty?")]
         [Display(Name = "Amount")]
         public int Amount_new { get; set; }
 
